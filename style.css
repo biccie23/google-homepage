@@ -42,7 +42,7 @@ body{
 
 #search-bar-outline{
     border-radius: 25px;
-    border: .5px solid rgb(181, 182, 184);
+    border: 1px solid #dfe1e5;
     padding: 5px;
     align-self: center;
     height: 25px;
@@ -51,7 +51,9 @@ body{
     flex-direction: row;
     justify-content: space-between;
     }
-
+#search-bar-outline:hover {
+    box-shadow:  0 0 12px  rgba(131, 128, 128, 0.2);
+}
 #search-bar{
     border-radius: 5%;
     padding: 3px;
@@ -59,6 +61,13 @@ body{
     width: 460px;
     height: 17px;
     flex-grow:14;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus,
+    button:focus {
+        outline: none;
     }
 #search-img{
     flex-grow: 1;
@@ -97,4 +106,8 @@ body{
     min-width: 54px;
     text-align: center;
 
+    }
+
+    .search-button:hover {
+        box-shadow:  0 0 2px  rgba(73, 72, 72, 0.7);
     }
