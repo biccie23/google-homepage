@@ -11,12 +11,6 @@ body{
     height: 60px;
     }
 
-#footer{
-    position: absolute;
-    bottom: 0;
-    min-width: 100%;
-    background-color: #f2f2f2;
-    }
 #main{
     position: absolute;
     margin:0;
@@ -111,3 +105,51 @@ body{
     .search-button:hover {
         box-shadow:  0 0 2px  rgba(73, 72, 72, 0.7);
     }
+
+#footer{
+    position: absolute;
+    bottom: 0;
+    min-width: 100%;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    }
+
+.footer-row1{
+    font-size: 15px;
+    text-align: left;
+    color: rgba(0,0,0,.54);
+    line-height: 30px;
+    font-family: arial,sans-serif;
+    border: 1px solid #e4e4e4;   
+    padding-left: 20px;
+}
+
+.footer-row2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid #e4e4e4;
+    padding-left: 10px;
+    
+}
+.footer-left-column{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.footer-right-column{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.footer-item{
+    font-size: 10px;
+    text-align: left;
+    color: rgba(0,0,0,.54);
+    line-height: 30px;
+    font-family: arial,sans-serif;
+    margin: 10px;
+    text-decoration: none;
+}
